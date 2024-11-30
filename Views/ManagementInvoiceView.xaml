@@ -1,0 +1,57 @@
+﻿<UserControl x:Class="QuanLiCaphe.Views.ManagementInvoiceView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Name="InvoiceManagementUserControl"
+             Background="{DynamicResource MaterialDesignPaper}">
+
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Quản lý hóa đơn" FontSize="24" FontWeight="Bold" Margin="10,30" HorizontalAlignment="Center"/>
+
+            <!-- Danh sách các bàn -->
+            <ComboBox x:Name="cbTables" SelectionChanged="CbTables_SelectionChanged" Width="200" Margin="10" >
+                <!-- Danh sách bàn sẽ được nạp từ code-behind -->
+            </ComboBox>
+
+            <!-- Danh sách hóa đơn của bàn -->
+            <DataGrid x:Name="dgBills" AutoGenerateColumns="False" Margin="10" CanUserAddRows="False" IsReadOnly="True" Height="80" SelectionChanged="DgBills_SelectionChanged" MouseDoubleClick="DgBills_MouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Tổng tiền" Binding="{Binding TotalAmount}" Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <StackPanel Orientation="Horizontal" Height="42">
+                <Button Content="Thêm món" Width="100" Margin="5" Click="AddFood_Click"/>
+                <Button Content="Sửa món" Width="100" Margin="5" Click="EditFood_Click"/>
+                <Button Content="Xóa món" Width="100" Margin="5" Click="DeleteFood_Click"/>
+            </StackPanel>
+
+            <!-- Chi tiết hóa đơn -->
+            <DataGrid x:Name="dgBillDetails" AutoGenerateColumns="False" Margin="10" CanUserAddRows="False" IsReadOnly="True" Height="200" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Món" Binding="{Binding FoodName}" Width="*"/>
+                    <DataGridTextColumn Header="Số lượng" Binding="{Binding Count}" Width="*"/>
+                    <DataGridTextColumn Header="Giá" Binding="{Binding Price}" Width="*"/>
+                    <DataGridTextColumn Header="Thành tiền" Binding="{Binding TotalPrice}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <!-- Hiển thị mã QR -->
+                <Image x:Name="qrCodeImage" Width="200" Height="200" Margin="10" />
+
+                <!-- Thông tin tài khoản -->
+                <StackPanel Margin="10">
+                    <TextBlock Text="STK: 0984127353" FontSize="16" FontWeight="Bold" />
+                    <TextBlock Text="Tên tài khoản: MBB NGUYEN HUU KHANG" FontSize="16" FontWeight="Bold" Margin="0,5,0,0"/>
+
+                    <!-- Nút thanh toán -->
+                    <Button Content="Thanh toán" Margin="0" Click="PayBill_Click" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,53 @@
+﻿<UserControl x:Class="QuanLiCaphe.Views.ManagementTableView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Name="TableManagementUserControl"
+             Background="{DynamicResource MaterialDesignPaper}">
+
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Quản lý bàn" FontSize="24" FontWeight="Bold" Margin="10,30" HorizontalAlignment="Center"/>
+
+            <!-- Phần nhập thông tin bàn -->
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Tên bàn:" VerticalAlignment="Top" Margin="10,0,10,0" Grid.Column="0"/>
+
+                <Grid Grid.Column="1" Margin="10,0,10,50">
+                    <TextBlock x:Name="placeholderText" Text="Nhập tên bàn" Foreground="Gray" VerticalAlignment="Center" IsHitTestVisible="False"/>
+                    <TextBox x:Name="txtTableName" Margin="0" VerticalAlignment="Center" GotFocus="txtTableName_GotFocus" LostFocus="txtTableName_LostFocus"/>
+                </Grid>
+
+                <TextBlock Text="Trạng thái bàn:" VerticalAlignment="Center" Margin="10,0" Grid.Column="0" />
+                <ComboBox x:Name="cbTableStatus" Grid.Column="1" Margin="10,0" VerticalAlignment="Center" SelectionChanged="cbTableStatus_SelectionChanged">
+                    <ComboBoxItem Content="Trống"/>
+                    <ComboBoxItem Content="Có khách"/>
+                    <ComboBoxItem Content="Đã đặt"/>
+                </ComboBox>
+            </Grid>
+
+            <!-- Các nút điều khiển -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+                <Button Content="Thêm bàn" Margin="5" Click="AddTable_Click"/>
+                <Button Content="Sửa bàn" Margin="5" Click="UpdateTable_Click"/>
+                <Button Content="Xóa bàn" Margin="5" Click="DeleteTable_Click"/>
+                <Button Content="Tìm bàn" Margin="5" Click="SearchTable_Click"/>
+                <!-- Nút tìm bàn -->
+            </StackPanel>
+
+            <!-- Danh sách bàn -->
+            <DataGrid x:Name="dgTables" AutoGenerateColumns="False" Margin="10" CanUserAddRows="False" IsReadOnly="True" Height="200" SelectionChanged="dgTables_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Tên bàn" Binding="{Binding Name}" Width="*"/>
+                    <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>

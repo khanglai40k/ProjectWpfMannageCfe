@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="QuanLiCaphe.Views.ManagementRevenueView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:QuanLiCaphe.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             
+             Background="{DynamicResource MaterialDesignPaper}">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Bộ Lọc Doanh Thu" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Chọn Ngày: " VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <DatePicker x:Name="DatePicker" Width="120"/>
+                <Button Content="Lọc" Margin="5,0,0,0" Click="FilterByDate_Click"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Chọn Tháng: " VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <ComboBox x:Name="MonthComboBox" Width="120">
+                    <ComboBoxItem Content="1"/>
+                    <ComboBoxItem Content="2"/>
+                    <ComboBoxItem Content="3"/>
+                    <ComboBoxItem Content="4"/>
+                    <ComboBoxItem Content="5"/>
+                    <ComboBoxItem Content="6"/>
+                    <ComboBoxItem Content="7"/>
+                    <ComboBoxItem Content="8"/>
+                    <ComboBoxItem Content="9"/>
+                    <ComboBoxItem Content="10"/>
+                    <ComboBoxItem Content="11"/>
+                    <ComboBoxItem Content="12"/>
+                </ComboBox>
+                <TextBlock Text="Năm: " VerticalAlignment="Center" Margin="5,0,0,0"/>
+                <ComboBox x:Name="YearComboBox" Width="80">
+                    <ComboBoxItem Content="2021"/>
+                    <ComboBoxItem Content="2022"/>
+                    <ComboBoxItem Content="2023"/>
+                    <ComboBoxItem Content="2024"/>
+                </ComboBox>
+                <Button Content="Lọc" Margin="5,0,0,0" Click="FilterByMonthYear_Click"/>
+            </StackPanel>
+
+            <Button Content="Lấy Dữ Liệu" Margin="0,0,0,10" Click="LoadRevenue_Click"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <Button Content="Xem Thống Kê Đường" Margin="0,0,0,10" Click="ViewStatistics_Click"/>
+                <Button Content="Xem Thống Kê Cột" Margin="0,0,0,10" Click="ViewColumnStatistics_Click" />
+              
+            </StackPanel>
+
+            <!-- Đặt chiều cao cho DataGrid -->
+            <DataGrid 
+                x:Name="RevenueDataGrid" 
+                AutoGenerateColumns="True" 
+                ScrollViewer.CanContentScroll="True" 
+                ScrollViewer.VerticalScrollBarVisibility="Auto"
+                Height="300" />
+            <!-- Chiều cao cố định cho DataGrid -->
+        </StackPanel>
+    </Grid>
+</UserControl>

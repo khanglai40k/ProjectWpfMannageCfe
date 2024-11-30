@@ -1,0 +1,49 @@
+﻿<Window x:Class="QuanLiCaphe.Views.EditFoodWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="Sửa món ăn" Height="400" Width="400"
+        ResizeMode="CanMinimize"
+        Icon="pack://application:,,,/Images/sun52.jpg"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock Text="Danh sách món ăn" FontSize="18" Margin="10,10,10,0" VerticalAlignment="Top"/>
+
+        <ItemsControl x:Name="itemsControl" Margin="10,40,10,100" ItemsSource="{Binding}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <ComboBox x:Name="cbFood"
+                                  SelectedValuePath="Id"
+                                  DisplayMemberPath="Name" 
+                                  SelectedValue="{Binding IdFood, Mode=TwoWay}" 
+                                  Width="120"
+                                  ItemsSource="{Binding DataContext.FoodList, RelativeSource={RelativeSource AncestorType=Window}}" />
+
+                        <ComboBox x:Name="cbQuantity"
+                                  SelectedValue="{Binding Count, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                  Width="80">
+                            <ComboBox.ItemsSource>
+                                <x:Array Type="{x:Type sys:Int32}">
+                                    <sys:Int32>1</sys:Int32>
+                                    <sys:Int32>2</sys:Int32>
+                                    <sys:Int32>3</sys:Int32>
+                                    <sys:Int32>4</sys:Int32>
+                                    <sys:Int32>5</sys:Int32>
+                                    <sys:Int32>6</sys:Int32>
+                                    <sys:Int32>7</sys:Int32>
+                                    <sys:Int32>8</sys:Int32>
+                                    <sys:Int32>9</sys:Int32>
+                                    <sys:Int32>10</sys:Int32>
+                                </x:Array>
+                            </ComboBox.ItemsSource>
+                        </ComboBox>
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <Button Content="Lưu thay đổi" Margin="10,320,10,10" VerticalAlignment="Bottom" 
+                Width="360" Click="SaveChanges_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|c:\\xampp\\htdocs\\knowledge it\\asp_net\\c#\\wpf\\project\\quanlicaphe\\views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|solutionrelative:views\\loginview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\views\\themes\\dark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|solutionrelative:views\\themes\\dark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\views\\homemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|solutionrelative:views\\homemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\views\\homeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|solutionrelative:views\\homeview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D562A013-8A66-4ECF-82EA-A860A9C6DD45}|QuanLiCaphe.csproj|solutionrelative:views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\HomeView.xaml",
+              "RelativeDocumentMoniker": "Views\\HomeView.xaml",
+              "ToolTip": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\HomeView.xaml",
+              "RelativeToolTip": "Views\\HomeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T07:25:35.026Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeView.xaml.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\HomeView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\HomeView.xaml.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\HomeView.xaml.cs",
+              "RelativeToolTip": "Views\\HomeView.xaml.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAkwEcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:36:25.481Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeMain.xaml",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\HomeMain.xaml",
+              "RelativeDocumentMoniker": "Views\\HomeMain.xaml",
+              "ToolTip": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\HomeMain.xaml",
+              "RelativeToolTip": "Views\\HomeMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T08:55:34.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dark.xaml",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\Themes\\Dark.xaml",
+              "RelativeDocumentMoniker": "Views\\Themes\\Dark.xaml",
+              "ToolTip": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\Themes\\Dark.xaml",
+              "RelativeToolTip": "Views\\Themes\\Dark.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T08:25:14.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginView.xaml.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\LoginView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginView.xaml.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\KNOWLEDGE IT\\ASP_NET\\C#\\WPF\\PROJECT\\QuanLiCaphe\\Views\\LoginView.xaml.cs",
+              "RelativeToolTip": "Views\\LoginView.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:32:16.764Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
